@@ -1,0 +1,23 @@
+appId: com.kiibankcmr.kiibank_mobile.qa
+---
+- runFlow: loginCurrentUser.yml
+
+- assertVisible:  "Request Payment"
+- tapOn: "Request Payment"
+
+- assertVisible: "Send a request"
+- tapOn: "Send a request"
+
+- tapOn: "K
+
+    Kora
+
+    Account no. 11990715
+
+    \ KiiBank"
+- tapOn: "1"
+- tapOn: "0"
+- tapOn: "Request"
+- assertVisible: "Completed!"
+- tapOn: "Done"
+

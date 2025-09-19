@@ -1,0 +1,26 @@
+appId: com.kiibankcmr.kiibank_mobile.qa
+---
+- runFlow: loginCurrentUser.yml
+
+- tapOn: "Transfer Money"
+
+- assertVisible: "Select Recipient"
+- tapOn: "K
+    Kora
+    Account no. 11990715
+    \ KiiBank"
+- tapOn: "1"
+- tapOn: "0"
+- tapOn: "Continue"
+- tapOn: "Confirm"
+
+- tapOn: 
+    text: "1"
+    repeat: 5
+    
+- tapOn: "Authorise Now"
+- assertVisible: " to Kora"
+- tapOn: "Done"
+
+
+

@@ -1,0 +1,13 @@
+appId: com.kiibankcmr.kiibank_mobile.qa
+---
+- runFlow: loginCurrentUser.yml
+- assertVisible: "Scan"
+- tapOn: "Scan"
+- assertVisible: "Get Paid"
+- tapOn: "Get Paid"
+- tapOn: "1"
+- tapOn: "2"
+- tapOn: "Request"
+- assertVisible: "Show the code to customer to scan"
+- tapOn: "Exit"
+

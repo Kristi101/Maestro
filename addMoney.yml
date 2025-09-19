@@ -1,0 +1,20 @@
+appId: com.kiibankcmr.kiibank_mobile.qa
+---
+- runFlow: loginCurrentUser.yml
+
+- tapOn: "Add Money"
+- tapOn: "Add money using mobile wallet
+
+    Transfer from mobile wallet to your account
+
+    Fee: Mobile network fee may apply"
+- tapOn: "MTN\n+237 787878\nActive"
+- tapOn: "1"
+- tapOn: "0"
+- tapOn: "Continue"
+- tapOn: "Confirm"
+- assertVisible: "Account funding in progress.\ 
+
+    You will be notified upon confirmation."
+- tapOn: "Go to Dashboard"
+

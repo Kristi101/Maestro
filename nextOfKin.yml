@@ -1,0 +1,12 @@
+appId: com.kiibankcmr.kiibank_mobile.qa
+---
+- runFlow: loginCurrentUser.yml
+- tapOn: "More" 
+- tapOn: "Next of Kin"
+- assertVisible: "Nancy"
+- tapOn: "Edit"
+- tapOn: "Nancy"
+- eraseText: 10
+- inputText: "Nancy"
+- tapOn: "Save"
+

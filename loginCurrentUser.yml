@@ -1,0 +1,12 @@
+﻿appId: com.kiibankcmr.kiibank_mobile.qa
+---
+- launchApp
+- tapOn: 
+    text: "1"
+    repeat: 4
+
+
+
+
+
+ 

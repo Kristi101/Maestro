@@ -1,0 +1,7 @@
+appId: com.kiibankcmr.kiibank_mobile.qa
+---
+- runFlow: loginCurrentUser.yml
+- tapOn: "More"
+- tapOn: "Personal Details"
+- assertVisible: "Katherine test"
+  

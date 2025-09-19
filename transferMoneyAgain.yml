@@ -1,0 +1,21 @@
+# Transfering money again from recent transaction
+appId: com.kiibankcmr.kiibank_mobile.qa
+---
+- runFlow: loginCurrentUser.yml
+
+- tapOn: "View All"
+- assertVisible: "Transactions"
+- tapOn:
+    point: "50%,29%"
+- tapOn: "Transfer Again"
+- tapOn: "Continue"
+- tapOn: "Confirm"
+
+- tapOn: 
+    text: "1"
+    repeat: 5
+- tapOn: "Authorise Now"
+- assertVisible:
+    id: "android:id/content"
+- tapOn: "Done"
+
