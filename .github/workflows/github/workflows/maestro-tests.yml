@@ -2,7 +2,7 @@ name: Maestro UI Tests
 
 on:
   push:
-    branches: [ main ]
+    branches: '**'
 
 jobs:
   maestro-tests:
