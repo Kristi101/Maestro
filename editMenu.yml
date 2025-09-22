@@ -1,0 +1,19 @@
+appId: com.kiibankcmr.kiibank_mobile.qa
+---
+- runFlow: loginCurrentUser.yml
+
+- tapOn:
+    point: "91%,15%"
+- tapOn:
+    point: "85%,27%"
+- tapOn:
+    point: "50%,90%"
+- tapOn:
+    point: "91%,15%"
+- tapOn:
+    point: "50%,23%"
+- tapOn: "Done"   
+
+
+
+
