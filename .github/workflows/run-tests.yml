@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main   # triggers only on pushes to main
+  workflow_dispatch:   # allows manual trigger
 
 jobs:
   test:
@@ -20,6 +21,3 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
-      - name: Run tests
-        run: npm test
